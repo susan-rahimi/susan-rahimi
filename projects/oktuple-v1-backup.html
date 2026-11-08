@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Management Tool | Susan Rahimi</title>
+<meta name="description" content="UX research case study: improving the findability of the Collection feature in a project management tool.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/project.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+  <a class="brand" href="../index.html">Susan Rahimi</a>
+  <nav class="nav" aria-label="Main">
+    <a href="../index.html">Work</a>
+    <a href="../about.html">About</a>
+    <a href="../resume.pdf">Resume</a>
+  </nav>
+</header>
+
+<main class="case">
+  <h1 class="sr-only">Improving the Findability of the Collection Feature in a Project Management Tool</h1>
+
+  <figure class="cover">
+    <img src="../images/oktuple/cover.webp" width="1372" height="772" alt="User Research Case Study, 4 weeks: Improving the Findability of the Collection Feature in a Project Management Tool">
+  </figure>
+
+  <div class="prose">
+    <h2>Research Plan</h2>
+    <h3>Background</h3>
+    <p>The product is a project management platform designed for agile teams and was in its pre-launch stage during this study. Before releasing the product publicly, the team wanted to validate whether one of its core workflows—creating and managing Collections—was easy to discover and understand for target users.</p>
+    <p>To support this goal, I conducted usability research to identify usability issues, understand user behavior, and provide evidence-based recommendations before launch.</p>
+  </div>
+
+  <figure class="figure">
+    <img src="../images/oktuple/research-plan.webp" width="1600" height="460" alt="Research process: Behavior Observation, Pattern Detected, Research, Usability Testing" loading="lazy">
+  </figure>
+
+  <div class="prose">
+    <h2>Problem Discovery</h2>
+    <p>While reviewing user behavior, I noticed that several users struggled to locate the Collection feature.</p>
+    <p>To better understand the issue, I analyzed approximately 15 session recordings in Microsoft Clarity. A consistent behavioral pattern emerged, suggesting that users experienced difficulty discovering this feature.</p>
+    <p>Common behaviors included:</p>
+    <ul>
+      <li>Repeated clicks across different interface areas</li>
+      <li>Extensive navigation through menus</li>
+      <li>Long pauses before locating the feature</li>
+      <li>Extended time before initiating the Collection creation process</li>
+    </ul>
+    <p>These observations indicated a potential discoverability issue and prompted a more in-depth usability investigation.</p>
+
+    <h3>Research Hypothesis</h3>
+    <p>Based on behavioral observations and findings from an earlier discovery survey, I formulated the following hypotheses:</p>
+    <ul>
+      <li>The concept of Collection was not sufficiently clear to users.</li>
+      <li>The information architecture did not align with users' mental models.</li>
+      <li>The placement of the feature reduced its discoverability.</li>
+    </ul>
+
+    <h3>Research Hypothesis</h3>
+    <p>Users struggle to discover the Collection feature because both its concept and placement do not align with their expectations and mental models.</p>
+
+    <h3>Research Methodology</h3>
+    <p>Moderated Remote Usability Testing</p>
+
+    <h3>Target Audience</h3>
+    <p>Experienced project management professionals with at least two years of hands-on experience using project management tools, including:</p>
+    <ul>
+      <li>Product Managers</li>
+      <li>Scrum Masters</li>
+    </ul>
+
+    <h3>Usability Test Result</h3>
+    <p class="strong">Task completion</p>
+    <ul class="status">
+      <li>✅ 1 participant completed the task successfully.</li>
+      <li>⚠️ 5 participants completed the task with significant difficulty and long completion times.</li>
+      <li>❌ 1 participant was unable to complete the task.</li>
+    </ul>
+  </div>
+
+  <figure class="figure">
+    <img src="../images/oktuple/usability-test-result.webp" width="1327" height="562" alt="Usability test result for the Create Collection task: 1 success, 5 completed with difficulty, 1 failed" loading="lazy">
+  </figure>
+
+  <div class="prose">
+    <h2>Finding1 — Navigation Issue</h2>
+    <h4>Observation</h4>
+    <p>The Create Collection action was hidden inside a submenu, making it difficult for users to discover.</p>
+    <h4>Evidence</h4>
+    <ul>
+      <li>Participants repeatedly navigated through different sections.</li>
+      <li>Most users spent considerable time searching for the creation path.</li>
+    </ul>
+    <h4>Recommendation</h4>
+    <p>Expose the Create Collection action directly within the navigation hierarchy.</p>
+
+    <h2>Finding2 — Lack of Concept Clarity</h2>
+    <h4>Observation</h4>
+    <p>Users struggled to understand the purpose of Collection.</p>
+    <p>The current product provided no explanation, onboarding, or contextual guidance, leaving users without the necessary mental model to understand the feature.</p>
+    <h4>Recommendation</h4>
+    <ul>
+      <li>Add supporting microcopy.</li>
+      <li>Introduce contextual onboarding.</li>
+      <li>Explain the feature during first-time use.</li>
+    </ul>
+
+    <h2>Finding3 — Screen Size Affects Discoverability</h2>
+    <h4>Observation</h4>
+    <ul>
+      <li>Participants using an expanded sidebar located the Collection feature more quickly.</li>
+      <li>On smaller screens, the collapsed navigation and limited visual cues made it difficult for users to understand the project hierarchy and discover the feature.</li>
+    </ul>
+    <h4>Recommendation</h4>
+    <ul>
+      <li>Expand the relevant navigation section by default on smaller screens.</li>
+      <li>Surface the project hierarchy within the Project page.</li>
+      <li>Improve visual cues for expandable navigation items.</li>
+    </ul>
+
+    <h2>Key Research Insights</h2>
+    <ul>
+      <li>Users need to understand the concept of Collection before they can successfully use it.</li>
+      <li>Discoverability depends not only on feature placement but also on users' mental models.</li>
+      <li>Clearly exposing the project hierarchy significantly improves users' ability to discover the Collection feature.</li>
+    </ul>
+  </div>
+
+  <figure class="figure">
+    <img src="../images/oktuple/notification-improvement.webp" width="1185" height="511" alt="Notification Improvements: before and after" loading="lazy">
+  </figure>
+  <figure class="figure">
+    <img src="../images/oktuple/collection-understanding.webp" width="1185" height="511" alt="Improving Collection Understanding: before and after" loading="lazy">
+  </figure>
+  <figure class="figure">
+    <img src="../images/oktuple/navigation-smaller-screens.webp" width="1185" height="511" alt="Improving Navigation on Smaller Screens: before and after" loading="lazy">
+  </figure>
+
+  <div class="prose">
+    <h2>Validation &amp; Iteration</h2>
+    <ul>
+      <li>Based on the research findings, the product team implemented a series of design improvements to improve the discoverability and clarity of the Collection feature.</li>
+      <li>A second moderated usability test was then conducted with 5 participants to validate the effectiveness of these changes.</li>
+    </ul>
+
+    <h2>Outcomes</h2>
+  </div>
+
+  <figure class="figure">
+    <img src="../images/oktuple/outcome.webp" width="1327" height="562" alt="Outcomes, before and after: success rate 14% to 100%, average time on task 2:08 to 1:15, findability low to improved" loading="lazy">
+  </figure>
+
+  <div class="prose">
+    <h2>Reflection</h2>
+    <p>This project reinforced the importance of validating design assumptions with real users. While the initial hypothesis focused on navigation issues, the research revealed that conceptual clarity played an equally important role in feature discoverability. Iterative testing allowed the team to validate design decisions and confidently improve the user experience.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-title">Let&rsquo;s work together</p>
+    <p class="footer-sub">Susan Rahimi &middot; UX Researcher/Designer</p>
+    <div class="footer-links">
+      <a href="mailto:susanrahimi71@gmail.com">susanrahimi71@gmail.com</a>
+      <a href="https://www.linkedin.com/in/susan-rahimi/" target="_blank" rel="noopener"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#0A66C2"/><path fill="#fff" d="M9.6 15.6h4.3V30H9.6zM11.75 8.9a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM16.6 15.6h4.1v2h.06c.57-1.08 1.97-2.2 4.05-2.2 4.33 0 5.13 2.85 5.13 6.55V30h-4.3v-7.3c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.85V30h-4.3z"/></svg>LinkedIn</a>
+      <a href="../resume.pdf">Resume</a>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 Susan Rahimi</span><a href="#top">Back to top &uarr;</a></div>
+  </div>
+</footer>
+
+<script src="../js/lightbox.js" defer></script>
+</body>
+</html>
