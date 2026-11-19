@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Cost of Living Estimator | Susan Rahimi</title>
+<meta content="Product design case study: A mobile app concept to estimate living costs in Armenia, from discovery to user testing." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Vazirmatn:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="../css/project.css" rel="stylesheet"/>
+<link href="../css/case-extra.css" rel="stylesheet"/>
+</head>
+<body class="theme-cost" id="top">
+<header class="site-header">
+<a class="brand" href="../index.html">Susan Rahimi</a>
+<nav aria-label="Main" class="nav">
+<a href="../index.html">Work</a>
+<a href="../about.html">About</a>
+<a href="../resume.pdf">Resume</a>
+</nav>
+</header>
+<div aria-hidden="true" class="progress"><span></span></div>
+<main class="case">
+<a class="back" href="../index.html">← Work</a>
+<h1 class="sr-only">Cost of Living Estimator</h1>
+<figure class="cover">
+<img alt="App screens showing city comparison, monthly estimate, and lifestyle selection" height="1060" src="../images/cost-of-living/cover.webp" width="1600"/>
+</figure>
+<section aria-label="Project summary" class="summary">
+<dl>
+<div><dt>Role</dt><dd>UX/UI Designer &amp; Product Designer</dd></div>
+<div><dt>Duration</dt><dd>1 week</dd></div>
+<div><dt>Tools</dt><dd>Figma, Figma AI, Claude, Google Meet, Telegram</dd></div>
+</dl>
+<p>Cost of Living Estimator is a mobile app concept for people planning to move to Armenia who want a clearer picture of living costs before making a decision. I used AI tools at different stages of the design process to practice end-to-end product design and explore how AI can support real design work.</p>
+</section>
+<div class="prose">
+<h2>Problem &amp; Goal</h2>
+<p>The goal was to design a simple and trustworthy experience that helps people estimate living costs in Armenia based on their situation, while also showing how reliable each cost estimate is.</p>
+<p><strong>The numbers shown in the design (including $1,168 and an exchange rate of 360 AMD) are examples only and are not verified living-cost data for Armenia.</strong></p>
+<h2>Process</h2>
+</div>
+<figure class="figure"><img alt="Design process: define the problem, discover, define, develop, design, test and iterate" height="324" loading="lazy" src="../images/cost-of-living/design-process-en.webp" width="1912"/></figure>
+<div class="prose">
+<h2>Discovery</h2>
+<p>I started with questions and discussions in a Telegram group for Iranians interested in moving to Armenia. By reviewing the messages, I collected common concerns about living costs and moving expenses. I treated these messages as early signals to guide the problem, not as representative data about all migrants.</p>
+<h3>Telegram Messages</h3>
+<p>Examples of questions shared by members (names removed):</p>
+<blockquote>“Hi, how much does it cost to live in Armenia per month, including rent?”</blockquote>
+<blockquote>“Does 250,000 AMD cover monthly expenses for two people?”</blockquote>
+<blockquote>“The first month is probably more expensive. About how much does it cost?”</blockquote>
+<blockquote>“I made a rough monthly cost list for one person… Does it look right?”</blockquote>
+<p>These messages suggested a need to estimate both everyday living costs and the expenses of settling in. I used them to identify topics that needed further exploration.</p>
+<h3>Message Categories</h3>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Category</th><th>Related Messages</th><th>Possible Need / Problem</th></tr></thead>
+<tbody>
+<tr><td>Overall living cost estimate</td><td>1,  3,  5,  7,  8,  9</td><td>Unsure how much budget is needed to live in Armenia</td></tr>
+<tr><td>Food costs</td><td>4,  7,  10</td><td>Monthly food costs</td></tr>
+<tr><td>Housing costs</td><td>1,  6,  10</td><td>Rent and additional housing costs</td></tr>
+<tr><td>Transportation</td><td>4,  10</td><td>Transportation costs</td></tr>
+<tr><td>Communication</td><td>4</td><td>SIM card and internet</td></tr>
+<tr><td>Initial costs</td><td>6</td><td>Why the first month costs more</td></tr>
+<tr><td>Education</td><td>5,  6</td><td>Language classes</td></tr>
+<tr><td>Other</td><td>10</td><td>Costs outside the main categories</td></tr>
+<tr><td>Comparing locations</td><td>11</td><td>Differences between Yerevan and other cities</td></tr>
+</tbody>
+</table>
+</div>
+<div class="prose">
+<h3>Patterns I Identified</h3>
+<ol>
+<li><strong>Uncertainty about monthly budget:</strong> Before moving, people need a general estimate of how much living in their new location may cost.</li>
+<li><strong>Initial setup costs:</strong> The first month may include a deposit, fees, temporary accommodation, and essential items—expenses that may not repeat in later months.</li>
+<li><strong>Costs depend on personal circumstances:</strong> Budget varies by household size, city, housing type, and lifestyle, so one general estimate may not work for everyone.</li>
+</ol>
+<h3>Competitive Analysis</h3>
+<p>I reviewed LivingCost, Wise, and Numbeo to understand existing solutions. LivingCost supports household-based estimates and city comparisons; Wise presents costs in a clear visual format; and Numbeo offers a wide range of city data. This review helped me identify an opportunity for a simpler experience that explains costs based on destination, household size, housing type, and lifestyle.</p>
+<h2>Problem Definition &amp; Scope</h2>
+<p>Based on the early observations and competitor review, I defined three main user needs:</p>
+<ol>
+<li><strong>A. Monthly living costs</strong> in a city</li>
+<li><strong>B. Initial moving costs</strong>(addressing first-month expenses)</li>
+<li><strong>C. Compare two cities</strong>(including options outside Yerevan)</li>
+</ol>
+<h3>Design Principle: Data Transparency</h3>
+<p>Living costs depend on different factors, and not all figures have the same level of reliability. I made data transparency a key design principle. Each cost is marked as one of three statuses: <strong>Data, Approximate, or Unknown</strong> These statuses are not shown through color alone; text, icons, and line styles also help communicate them.</p>
+<h2>Development</h2>
+<h3>User Flow</h3>
+<p>I designed a shared step-by-step selection flow for the three goals to collect the information needed for each estimate. For the initial-cost scenario, the flow ends with housing type selection.</p>
+</div>
+<figure class="figure"><img alt="User flow from opening the app to the estimate result and sharing" height="1091" loading="lazy" src="../images/cost-of-living/user-flow-en.webp" width="2000"/></figure>
+<div class="prose">
+<h3>Site Map</h3>
+</div>
+<figure class="figure"><img alt="Site map: onboarding, home with the wizard and result, and the guide" height="867" loading="lazy" src="../images/cost-of-living/sitemap-en.webp" width="2000"/></figure>
+<div class="prose">
+<h2>Design &amp; Testing</h2>
+<h3>Wireframes</h3>
+<p>Before visual design, I created wireframes for the main screens and flows to review the information structure and interaction logic.</p>
+</div>
+<figure class="figure"><img alt="Wireframes of onboarding and the goal, destination, household and housing steps" height="797" loading="lazy" src="../images/cost-of-living/wireframes-1.webp" width="2000"/></figure>
+<figure class="figure"><img alt="Wireframes of the A, B and C results, the “Why approximate?” sheet and sharing" height="1082" loading="lazy" src="../images/cost-of-living/wireframes-2.webp" width="2000"/></figure>
+<div class="prose">
+<h3>UI Kit</h3>
+</div>
+<figure class="figure"><img alt="UI kit: colors, the three data statuses, rules and main components" height="1052" loading="lazy" src="../images/cost-of-living/ui-kit.webp" width="2000"/></figure>
+<div class="prose">
+<h3>Selected Design Frames</h3>
+</div>
+<figure class="figure"><img alt="Onboarding screens: app purpose, how it works and data honesty" height="1276" loading="lazy" src="../images/cost-of-living/frames-1-onboarding.webp" width="2000"/></figure>
+<figure class="figure"><img alt="Home and the three-step wizard, including the lifestyle step with a guidance message" height="766" loading="lazy" src="../images/cost-of-living/frames-2-goal-a-steps.webp" width="2000"/></figure>
+<figure class="figure"><img alt="Result screen with details, the “Why approximate?” sheet and the share sheets" height="1425" loading="lazy" src="../images/cost-of-living/frames-3-results-sheets.webp" width="2000"/></figure>
+<figure class="figure"><img alt="Guide tab: Telegram group, website, videos and the offline message" height="1274" loading="lazy" src="../images/cost-of-living/frames-4-guide.webp" width="2000"/></figure>
+<figure class="figure"><img alt="Compare two cities: goal selection, city selection, household, housing and the comparison result" height="1131" loading="lazy" src="../images/cost-of-living/frames-5-compare-cities.webp" width="2000"/></figure>
+<div class="prose">
+<h3>User Testing</h3>
+<p>I used Figma AI to turn the designs into a testable prototype and tested it with six Iranians who planned to move to Armenia within the next five months. Participants were recruited from the same Telegram group. I tested three main scenarios:</p>
+<ol>
+<li>Find the estimated cost of living for one month in Yerevan.</li>
+<li>Find winter utility costs.</li>
+<li>Compare living costs in two cities.</li>
+</ol>
+<p>Participants completed the first two scenarios without major issues. However, testing revealed some problems with information readability, finding results, and understanding interactions. I used this feedback to make the following design changes:</p>
+</div>
+<div class="test-item">
+<div class="prose"><ol><li><strong>Making the currency easier to recognize.</strong> Two participants paused at the main amount because they did not notice the currency unit at first. Since the currency symbol was shown in a smaller size, I replaced it with a written unit beside the amount so the number and unit could be read together.</li></ol></div>
+<figure class="figure"><img alt="Before and after: the small dollar symbol replaced by a written unit beside the amount" height="1629" loading="lazy" src="../images/cost-of-living/iteration-1.webp" width="2000"/></figure>
+</div>
+<div class="test-item">
+<div class="prose"><ol start="2"><li><strong>Removing zero-value chips.</strong> Three participants said chips with zero values did not add useful information. I removed them to make the summary cleaner and keep relevant information in focus. Meaningful statuses are still shown.</li></ol></div>
+<figure class="figure"><img alt="Before and after: zero-value chips removed from the result" height="2354" loading="lazy" src="../images/cost-of-living/iteration-2.webp" width="2000"/></figure>
+</div>
+<div class="test-item">
+<div class="prose"><ol start="3"><li><strong>Showing comparison results at the top.</strong> Four participants expected to find each city’s total cost quickly, but in the first version, totals were at the bottom of the table and required scrolling. I moved the comparison summary and both city totals to the top so users see the result before the details.</li></ol></div>
+<figure class="figure"><img alt="Before and after: city comparison summary moved to the top" height="2348" loading="lazy" src="../images/cost-of-living/iteration-3.webp" width="2000"/></figure>
+</div>
+<div class="test-item">
+<div class="prose"><ol start="4"><li><strong>Explaining data labels.</strong> Users could partly understand the “Data,” “Approximate,” and “Unknown” labels, but suggested making their definitions available. I added a short explanation of all three labels to the “Why approximate?” modal so users would not have to remember them from onboarding.</li></ol></div>
+<figure class="figure"><img alt="Before and after: meanings of the Data, Approximate and Unknown labels explained" height="1721" loading="lazy" src="../images/cost-of-living/iteration-4.webp" width="2000"/></figure>
+</div>
+<div class="test-item">
+<div class="prose"><ol start="5"><li><strong>Splitting the final step and explaining the disabled button.</strong> Housing type and lifestyle, two independent decisions with five options in total, were shown on the same screen, and the “See Results” button was disabled without any explanation, leaving users unsure what they needed to do to continue. I moved lifestyle selection to the next step, after users choose their housing type, and added a short guidance message below the disabled button that disappears once all required selections are made. This applies Progressive Disclosure, presenting information and options step by step to reduce cognitive load at each stage, and Visibility of System Status, since explaining why the button is disabled helps users understand what is required and prevents confusion.</li></ol></div>
+<figure class="figure"><img alt="Before and after: lifestyle moved to its own step, with a guidance message under the disabled “See Results” button" height="1370" loading="lazy" src="../images/cost-of-living/iteration-5.webp" width="2000"/></figure>
+</div>
+<div class="prose">
+<h2>Next Steps</h2>
+<ol>
+<li><strong>Run usability testing with more participants.</strong> The five iterations came from sessions with six people, so the next step is a second round with a larger group, using the same tasks to check whether the issues I fixed are actually resolved and to increase confidence in the results.</li>
+<li><strong>Validate the estimates with real data.</strong> Some of the numbers in the design are examples. I would collect real prices from reliable sources and from the community itself, then review which costs deserve the Data, Approximate or Unknown status, since data transparency is the core idea of the product.</li>
+<li><strong>Check accessibility.</strong> The data statuses are communicated through text, icons and line styles, not color alone. I would back this up with contrast checks and testing with a screen reader.</li>
+</ol>
+</div>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<p class="footer-title">Let’s work together</p>
+<p class="footer-sub">Susan Rahimi · UX Researcher / Designer</p>
+<div class="footer-links">
+<a href="https://www.linkedin.com/in/susan-rahimi/" rel="noopener" target="_blank"><svg aria-hidden="true" viewbox="0 0 40 40"><rect fill="#0A66C2" height="40" rx="6" width="40"></rect><path d="M9.6 15.6h4.3V30H9.6zM11.75 8.9a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM16.6 15.6h4.1v2h.06c.57-1.08 1.97-2.2 4.05-2.2 4.33 0 5.13 2.85 5.13 6.55V30h-4.3v-7.3c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.85V30h-4.3z" fill="#fff"></path></svg>LinkedIn</a>
+<a href="../resume.pdf">Resume</a>
+</div>
+<div class="footer-bottom"><span>© 2026 Susan Rahimi</span><a href="#top">Back to top ↑</a></div>
+</div>
+</footer>
+<script defer="" src="../js/lightbox.js"></script>
+<script defer="" src="../js/progress.js"></script>
+</body>
+</html>
