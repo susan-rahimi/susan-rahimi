@@ -10,7 +10,21 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Vazirmatn:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="../css/project.css" rel="stylesheet"/>
-<link href="../css/case-extra.css" rel="stylesheet"/>
+<style>
+/* Extra styles for the Cost of Living case study (blockquotes and the categories table). Load after project.css. */
+.theme-cost{--accent:#37578D}
+.theme-cost .prose blockquote{margin:0 0 var(--s2);padding:var(--s2) var(--s3);background:#fff;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;font-weight:500}
+.theme-cost .table-wrap{max-width:680px;margin:var(--s3) auto;overflow-x:auto}
+.theme-cost table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:var(--fs-small)}
+.theme-cost th,.theme-cost td{padding:12px var(--s2);text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.theme-cost th{background:#e3e2df;font-weight:600}
+/* Secondary brand color #E89B4C */
+.theme-cost{--accent-2:#E89B4C}
+.theme-cost .prose h2::before{color:var(--accent-2)}
+.theme-cost .summary dt::before{content:"";display:inline-block;width:18px;height:3px;margin-inline-end:8px;vertical-align:middle;background:var(--accent-2)}
+.theme-cost .prose blockquote{border-color:var(--accent-2)}
+.theme-cost th{border-bottom:3px solid var(--accent-2)}
+</style>
 </head>
 <body class="theme-cost" id="top">
 <header class="site-header">
